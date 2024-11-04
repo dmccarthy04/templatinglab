@@ -53,11 +53,10 @@ class Recipe<T extends Ingredient> { //extends indicates a constraint for the ty
     }
 }
 public class Main {
-    public static void menu(Recipe<Ingredient> recipe, Scanner s) { //could try catch for type error exception for nextInt()
+    public static void menu(Recipe<Ingredient> recipe, Scanner sc) { //could try catch for type error exception for nextInt()
         System.out.println("1. to add ingredient to recipe");
         System.out.println("2. to print recipe");
         System.out.println("-1. to exit");
-        Scanner sc = new Scanner(System.in);
         try {
             int select = sc.nextInt();
             char type = 0;
